@@ -1,0 +1,10 @@
+streamlit==1.40.0
+streamlit-soccer>=0.0.1
+kloppy>=3.14.0
+imageio>=2.34.0
+imageio-ffmpeg>=0.5.1
+Pillow>=10.3.0
+numpy>=1.26.0
+pandas>=2.2.0
+plotly>=5.22.0
+requests>=2.32.0
