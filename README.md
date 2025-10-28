@@ -1,14 +1,14 @@
 ====================Description & Technical Choices====================
 
 
-What it does
+===========What it does===========
 
 
 A Streamlit app that loads SkillCorner tracking data (x/y for 22 players + ball at 10–30 FPS), lets you scrub frame-by-frame, select 0–10s windows, and export clips as GIF/MP4. It mirrors a video analyst’s clip/tag workflow while preserving off-ball context from raw positional data.
 
 
 
-Why these choices
+===========Why these choices===========
 
 
 Language: Python 3.10+ — rich data/plotting ecosystem, fast prototyping.
@@ -27,7 +27,7 @@ Project structure: Clear separation of concerns — loaders (I/O), transforms (n
 
 
 
-How to Use
+===========How to Use===========
 
 
 In the sidebar, enter a SkillCorner match ID (e.g., 2221637) and toggle “include empty frames” if desired.
@@ -46,7 +46,7 @@ Output naming: clip_<match_id>_<start>-<end>.<ext>
 ====================Tech Stack & Architecture====================
 
 
-Tech Stack
+===========Tech Stack===========
 
 
 Language: Python 3.10+
@@ -67,7 +67,7 @@ ffmpeg in PATH (only required for MP4; GIF works without it)
 
 
 
-Project Structure
+===========Project Structure===========
 
 
 app/
@@ -86,7 +86,7 @@ requirements.txt   # Python dependencies
 
 
 
-Data & Control Flow (High-Level)
+===========Data & Control Flow (High-Level)===========
 
 
 User selects match_id
