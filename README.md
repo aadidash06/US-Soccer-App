@@ -90,18 +90,27 @@ requirements.txt   # Python dependencies
 
 
 User selects match_id
+
         │
         ▼
+        
 loaders.load_skillcorner_tracking(match_id)
+
   └─ fetch + cache JSONL/metadata under app/data_cache/matches/<id>/
+  
         │
         ▼
+        
 transforms.frames_to_payloads(...)
+
   └─ normalized frame dicts for rendering/UI
+  
         │
         ├─ Streamlit UI scrubber updates current frame(s) on pitch
         ▼
+        
 render.render_clip(start, end, format)
+
   └─ GIF (imageio) or MP4 (imageio-ffmpeg + ffmpeg), return/download
 
 
